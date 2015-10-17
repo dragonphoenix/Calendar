@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">天统</string>
+    <string name="action_settings">Settings</string>
+    <string name="pre_month"></string>
+    <string name="next_month"></string>
+    <string name="total_money">水电费:</string>
+    <string name="cal_money">计算</string>
+
+    <string-array name="week_day">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+</resources>

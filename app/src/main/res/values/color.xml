@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="widget_background">#114fffbf</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#2c1e5cff</color>
+    <color name="selected">#ff0000ff</color>
+    <color name="selected_bg">#ffff40b8</color>
+    <color name="white">#3b000000</color>
+    <color name="textcolor">#ff51c1fd</color>
+    <color name="activity_font_color">#ffff00ff</color>
+
+    <color name="today_color">#000000</color>
+    <color name="today_select_color">#ff8495</color>
+</resources>

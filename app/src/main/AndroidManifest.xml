@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dragon.daystatistic">
+
+    <application
+        android:name=".DSApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".widget.CalendarAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.dragon.daystatistic.DAY_CLICK_ACTION" />
+                <action android:name="com.dragon.daystatistic.TODAY_ACTION" />
+                <action android:name="com.dragon.daystatistic.PRE_MONTH_CLICK_ACTION" />
+                <action android:name="com.dragon.daystatistic.NEXT_MONTH_CLICK_ACTION" />
+                <action android:name="com.dragon.daystatistic.APP_DAY_CLICK_ACTION" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/calendar_widget"/>
+        </receiver>
+        <service
+            android:name=".widget.CalendarRemoteViewsService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+    </application>
+
+</manifest>
